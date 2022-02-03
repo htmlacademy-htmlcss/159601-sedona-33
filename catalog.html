@@ -18,7 +18,7 @@
           <a class="navigation-link" href="about.html">О Седоне</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="#">Гостиницы</a>
+          <a class="navigation-link-current" href="#">Гостиницы</a>
         </li>
       </ul>
       <ul class="navigation-list navigation-user">
@@ -109,15 +109,21 @@
         <option value="expensive">Сначала дорогие</option>
         <option value="popular">Сначала популярные</option>
       </select>
-        <a href="#" class="button button-card">
-          <span class="visually-hidden">Показать карточки</span>
-        </a>
-        <a href="#" class="button-columns">
-          <span class="visually-hidden">показать колонки</span>
-        </a>
-        <a href="#" class="button-list">
-          <span class="visually-hidden">показать список</span>
-        </a>
+      <a href="#" class="button button-card">
+        <span class="visually-hidden">
+          показать карточки
+        </span>
+      </a>
+      <a href="#" class="button-columns">
+        <span class="visually-hidden">
+          показать колонки
+        </span>
+      </a>
+      <a href="#" class="button-list">
+        <span class="visually-hidden">
+          показать список
+        </span>
+      </a>
       <ul class="hotels-list">
         <li class="hotels-card">
           <a href="hotel.html" class="hotels-card-link">
@@ -173,56 +179,55 @@
           </a>
         </li>
       </ul>
-      <article class="download">
-        <a href="" class="button button-blue-download">Загрузить ещё</a>
-      </article>
-      <ul class="pagination">
-        <li class="pagination-item">
-          <a href="#" class="pagination-link pagination-prev pagination-disabled">
-            <span class="visually-hidden">Предыдущая страница</span>
-          </a>
-        </li>
-        <li class="pagination-item">
-          <a href="#" class="button button-white-link">1</a>
-        </li>
-        <li class="pagination-item">
-          <a href="#" class="button button-blue-link">2</a>
-        </li>
-        <li class="pagination-item">
-          <a href="#" class="button button-blue-link">3</a>
-        </li>
-        <li class="pagination-item">
-          <a href="#" class="button button-blue-link">4</a>
-        </li>
-        <li class="pagination-item">
-          <a href="#" class="button button-blue-link">...</a>
-        </li>
-        <li class="pagination-item">
-          <a href="#" class="button button-blue-link">10</a>
-        </li>
-        <form class="catalog-view" action="http://echo.htmlacademy.ru/" method="get">
-          <label for="select-view">Гостиниц на странице</label>
-          <select class="select-view" aria-label="Выбрать вид">
-            <option value="four">4</option>
-            <option value="eight">8</option>
-            <option value="ten">10</option>
-          </select>
-        </form>
-      </ul>
+    <div class="download">
+      <a href="" class="button button-blue">Загрузить ещё</a>
+    </div>
+    <ul class="pagination">
+      <li class="pagination-item">
+        <a href="#" class="pagination-link pagination-prev pagination-disabled">
+          <span class="visually-hidden">Предыдущая страница</span>
+        </a>
+      </li>
+      <li class="pagination-item">
+        <a href="#" class="button button-white-link">1</a>
+      </li>
+      <li class="pagination-item">
+        <a href="#" class="button button-blue-link">2</a>
+      </li>
+      <li class="pagination-item">
+        <a href="#" class="button button-blue-link">3</a>
+      </li>
+      <li class="pagination-item">
+        <a href="#" class="button button-blue-link">4</a>
+      </li>
+      <li class="pagination-item">
+        <a href="#" class="button button-blue-link">...</a>
+      </li>
+      <li class="pagination-item">
+        <a href="#" class="button button-blue-link">10</a>
+      </li>
+    </ul>
+      <form class="catalog-view" action="http://echo.htmlacademy.ru/" method="get">
+        <label for="select-view">Гостиниц на странице</label>
+        <select class="select-view" aria-label="Выбрать вид">
+          <option value="four">4</option>
+          <option value="eight">8</option>
+          <option value="ten">10</option>
+        </select>
+      </form>
     </section>
   </main>
-  <section class="subscribe">
-    <img src="" alt="" class="subscribe-img">
-    <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-    <p class="subscribe-description">
-      Только полезная информация и никакого спама,честное бойскаутское!
-    </p>
-    <form action="http://echo.htmlacademy.ru/" method="post" class="subscribe-form">
-      <input type="email" class="field" placeholder="Ваш e-mail" name="subscribe-email" id="subscribe-email" required>
-      <label class="visually-hidden" for="subscribe-email">Email</label>
-      <button class="button button-blue button-text-big subscribe-button" type="submit">Подписаться</button>
-    </form>
-  </section>  
+    <section class="subscribe">
+      <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+      <p class="subscribe-description">
+        Только полезная информация и никакого спама,честное бойскаутское!
+      </p>
+      <form action="http://echo.htmlacademy.ru/" method="post" class="subscribe-form">
+        <label class="visually-hidden" for="subscribe-email">Email</label>
+        <input type="email" class="subscribe-form" placeholder="Ваш e-mail" name="subscribe-email" id="subscribe-email" required>
+        <button class="button button-blue button-text-big subscribe-button" type="submit">Подписаться</button>
+      </form>
+    </section>  
   <footer class="page-footer">
     <section class="footer-social">
       <ul class="social-list">
@@ -241,7 +246,7 @@
             <span class="visually-hidden">Youtube</span>
           </a>
         </li>
-      </ul>    
+      </ul>
       <p class="footer-phone">
         <a href="tel:+78128121212">+7 (812) 812-12-12</a>
       </p>
