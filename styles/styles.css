@@ -156,6 +156,34 @@ body {
   font-style: #000;
 }
 
-.logo-footer {
-  
+.button-brown {
+  background-color: rgba(117, 98, 87, 1);
+  color: #fff;
+}
+
+.button-blue {
+  background-color: #83B3D3;
+  color: #fff;
+}
+
+.button-green {
+  background-color: #7DB54F;
+  color: #fff;
+}
+
+.hotel-rate {
+  background-color:#F2F2F2;
+  color: #333;
+}
+
+.filter-wrapper {
+  background-image: url(/159601-sedona-33/image/catalog-background.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.subscribe-field{
+  background-color: #F2F2F2;
+  color: #000;
 }
