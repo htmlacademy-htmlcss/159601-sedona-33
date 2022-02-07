@@ -121,7 +121,7 @@ body {
 }
 
 .subscribe {
-  background-image: url(/image/subscribe.jpg);
+  background-image: url(../image/subscribe.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
   text-align: center;
@@ -173,7 +173,7 @@ body {
 }
 
 .filter-wrapper {
-  background-image: url(/image/catalog-background.jpg);
+  background-image: url(../image/catalog-background.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
   color: #fff;
