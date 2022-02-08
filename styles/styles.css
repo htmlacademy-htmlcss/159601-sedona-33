@@ -36,13 +36,12 @@ body {
   color: #000;
   text-decoration: none;
   text-align: center;
-  text-transform: uppercase;
 }
 
 .main-index {
   color: #000;
   background-color: #fff;
-  background-image: url(../image/index-background.jpg);
+  background-image: url("../image/index-background.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -76,6 +75,14 @@ body {
   color: #000;
 }
 
+.advantages-title-white {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
 .advantages-number {
   font-size: 18px;
   font-weight: 400;
@@ -93,6 +100,10 @@ body {
 
 .advantages-wrapper-blue-cold {
   background-color: rgba(131, 179, 211, 0.12);
+}
+
+.found-descr {
+  text-transform: uppercase;
 }
 
 .search {
@@ -121,14 +132,14 @@ body {
 }
 
 .subscribe {
-  background-image: url(../image/subscribe.jpg);
+  background-image: url("../image/subscribe.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   text-align: center;
   color: #fff;
 }
 
-.subscribe-title {
+.subscribe-title, .subscribe-catalog-title  {
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
@@ -140,29 +151,30 @@ body {
   font-size: 20px;
   font-weight: 700;
   line-height: 36px;
-  text-transform: uppercase;
-  background-color: #83B3D3;
-  color: #fff;
 }
 
-/* .footer-phone {
-  font-size: 40px;
-  line-height: 40px;
-  text-align: center;
-  font-style: #000;
-} */
-
 .button-brown {
+  text-transform: uppercase;
   background-color: rgba(117, 98, 87, 1);
   color: #fff;
 }
 
 .button-blue {
+  text-transform: uppercase;
   background-color: #83B3D3;
   color: #fff;
 }
 
+.button-download {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
 .button-green {
+  text-transform: uppercase;
   background-color: #7DB54F;
   color: #fff;
 }
@@ -170,10 +182,12 @@ body {
 .hotel-rate {
   background-color: #F2F2F2;
   color: #333;
+  font-size: 16px;
+  text-transform: uppercase;
 }
 
 .filter-wrapper {
-  background-image: url(../image/catalog-background.jpg);
+  background-image: url("../image/catalog-background.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
   color: #fff;
@@ -182,4 +196,19 @@ body {
 .subscribe-field {
   background-color: #F2F2F2;
   color: #000;
+}
+
+.card-link {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+  color: #000;
+  text-decoration: none;
+}
+
+a[href^="tel:"] {
+  font-size: 40px;
+  line-height: 40px;
+  color: #000;
+  text-decoration: none;
 }
