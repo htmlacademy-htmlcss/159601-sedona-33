@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("/fonts/ptsans-400.woff2") format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,15 +10,13 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("/fonts/ptsans-700.woff2") format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
 body {
-  font-family: "PT Sans", "Arial", "Roboto", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
-  font-weight: 400;
-  font-style: normal;
   line-height: 21px;
   color: #333;
   background-color: #fff;
@@ -76,10 +74,6 @@ body {
 }
 
 .advantages-title-white {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
-  text-transform: uppercase;
   color: #fff;
 }
 
@@ -122,15 +116,6 @@ body {
   line-height: 26px;
 }
 
-.search-button{
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 36px;
-  text-transform: uppercase;
-  background-color: rgba(117, 98, 87, 1);
-  color: #fff;
-}
-
 .subscribe {
   background-image: url("../image/subscribe.jpg");
   background-repeat: no-repeat;
@@ -139,44 +124,11 @@ body {
   color: #fff;
 }
 
-.subscribe-title, .subscribe-catalog-title  {
+.subscribe-title, .subscribe-catalog-title {
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
-}
-
-.subscribe-button {
-  font-family: "PT Sans", sans-serif;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 36px;
-}
-
-.button-brown {
-  text-transform: uppercase;
-  background-color: rgba(117, 98, 87, 1);
-  color: #fff;
-}
-
-.button-blue {
-  text-transform: uppercase;
-  background-color: #83B3D3;
-  color: #fff;
-}
-
-.button-download {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 26px;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.button-green {
-  text-transform: uppercase;
-  background-color: #7DB54F;
-  color: #fff;
 }
 
 .hotel-rate {
@@ -206,9 +158,47 @@ body {
   text-decoration: none;
 }
 
-a[href^="tel:"] {
+.footer-phone a {
   font-size: 40px;
   line-height: 40px;
   color: #000;
   text-decoration: none;
+}
+
+.button {
+  font-family: "PT Sans", "Arial", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  color: #fff;
+}
+
+.button-brown {
+  background-color: #756257;
+}
+
+.button-blue {
+  background-color: #83B3D3;
+}
+
+.button-green {
+  background-color: #7DB54F;
+}
+
+.navigation-button {
+  line-height: 20px;
+  font-size: 16px;
+}
+
+.search-button {
+  background-color: #756257;
+  color: #fff;
+  line-height: 36px;
+}
+
+.button-more, .button-favorite, .button-check {
+  font-size: 16px;
+  line-height: 21px;
 }
