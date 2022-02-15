@@ -14,12 +14,38 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #333;
   background-color: #fff;
+}
+
+.navigation {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+  padding: 70px;
+}
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  width: 345px;
+}
+
+.navigation-user {
+  max-width: 280px;
+  margin-left: auto;
 }
 
 .navigation-link {
@@ -29,6 +55,21 @@ body {
   color: #000;
   text-decoration: none;
   text-align: center;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+.page-header-logo{
+  width: 140px;
+  display: block;
+  margin-left: 70px;
+}
+
+.main-page-container {
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .main-index {
@@ -110,14 +151,21 @@ body {
   background-size: 100%;
   text-align: center;
   color: #fff;
-
+}
+.subscribe-description {
+  font-size: 22px;
 }
 
-.subscribe-title, .subscribe-catalog-title {
+.subscribe-catalog {
+  text-align: center;
+}
+
+.subscribe-title {
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .hotel-rate {
@@ -125,13 +173,6 @@ body {
   color: #333;
   font-size: 16px;
   text-transform: uppercase;
-}
-
-.filter-wrapper {
-  background-image: url("../image/catalog-background.jpg");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  color: #fff;
 }
 
 .subscribe-field {
@@ -143,13 +184,6 @@ body {
   font-weight: 700;
   font-size: 24px;
   line-height: 31px;
-  color: #000;
-  text-decoration: none;
-}
-
-.footer-phone a {
-  font-size: 40px;
-  line-height: 40px;
   color: #000;
   text-decoration: none;
 }
@@ -195,4 +229,56 @@ body {
 .button-clear {
   background-color: #F2F2F2;
   color: #333;
+}
+
+.page-footer-container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-social {
+  width: 110px;
+  margin-right: 61px;
+}
+
+.footer-phone a {
+  font-size: 40px;
+  line-height: 40px;
+  color: #000;
+  text-decoration: none;
+}
+
+.footer-phone {
+  display: flex;
+  width: 740px;
+  justify-content: center;
+}
+
+.developer {
+  width: 115px;
+  margin-left: auto;
+  margin-right: 72px;
+}
+
+.filter-wrapper {
+  background-image: url("../image/catalog-background.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.advantages {
+  display: flex;
+  width: 1200px;
+}
+
+.advantages-wrapper {
+  display: flex;
+  width: 400px;
+  flex-wrap: wrap;
+}
+
+.hotels-container {
+  display: flex;
 }
