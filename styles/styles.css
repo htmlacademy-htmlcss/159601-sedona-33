@@ -61,9 +61,8 @@ body {
   flex-grow: 1;
 }
 
-.page-header-logo{
+.page-header-logo {
   width: 140px;
-  display: block;
   margin-left: 70px;
 }
 
@@ -72,12 +71,16 @@ body {
   margin: 0 auto;
 }
 
-.main-index {
+.main-img {
   color: #000;
-  background-color: #fff;
+  background-color: #436F8A;
   background-image: url("../image/index-background.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
+  text-align: center;
+}
+
+.main-wrapper {
   text-align: center;
 }
 
@@ -94,9 +97,35 @@ body {
   line-height: 36px;
 }
 
-.advantages-list {
-  text-align: center;
+.visually-hidden {
+  display: none;
 }
+
+.advantages {  /* display: flex; */
+  width: 1200px;
+}
+
+.advantages-list, .advantages-sublist {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.advantages-city, .advantages-bridge{
+  display: flex;
+  width: 1200px;
+}
+
+.advantages-wrapper{
+  width: 400px;
+}
+/*
+.advantages-img {
+  display: flex;
+} */
 
 .advantages-title {
   font-weight: 700;
@@ -131,6 +160,10 @@ body {
 
 .found-descr {
   text-transform: uppercase;
+}
+
+.search {
+  text-align: center;
 }
 
 .search-title {
@@ -250,9 +283,8 @@ body {
 }
 
 .footer-phone {
-  display: flex;
   width: 740px;
-  justify-content: center;
+  text-align: center;
 }
 
 .developer {
@@ -268,17 +300,13 @@ body {
   color: #fff;
 }
 
-.advantages {
-  display: flex;
-  width: 1200px;
-}
 
-.advantages-wrapper {
+/* .advantages-wrapper {
   display: flex;
   width: 400px;
   flex-wrap: wrap;
-}
+} */
 
-.hotels-container {
+/* .hotels-container {
   display: flex;
-}
+} */
