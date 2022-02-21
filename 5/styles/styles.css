@@ -69,7 +69,6 @@ body {
   position: relative;
   width: 140px;
   margin-right: 40px;
-
 }
 
 .main-page-container {
@@ -348,17 +347,13 @@ body {
   margin-right: 72px;
 }
 
-.filter-wrapper {
+.filter-img {
   background-image: url("../image/catalog-background.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
   color: #fff;
   padding-left: 71px;
-  /* padding-top: 35px; */
-}
-
-.visually-hidden {
-  /* display: none; */
+  padding-top: 35px;
 }
 
 .catalog-filter-list, .bredcrumbs {
@@ -367,3 +362,23 @@ body {
   list-style: none;
 }
 
+.catalog-form {
+  display:flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.button-form {
+  display:flex;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
