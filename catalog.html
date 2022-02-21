@@ -48,7 +48,7 @@
           <ul class="bredcrumbs">
             <li class="bredcrumbs-item">
               <a href="index.html" class="bredcrumbs-link">
-                <span class="visually-hidden">Home</span>
+                <span class="visua lly-hidden">Home</span>
               </a>
             </li>
             <li class="bredcrumbs-item">
@@ -60,7 +60,7 @@
           <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
           <form action="http://echo.htmlacademy.ru/" class="catalog-form" method="get">
             <fieldset class="catalog-filter-group">
-              <legend class="catalog-filter-title">Инфраструктура</legend>
+              <legend class="catalog-filter-title">Инфраструктура:</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="control">
@@ -83,7 +83,7 @@
               </ul>
             </fieldset>
             <fieldset class="catalog-filter-group">
-              <legend class="catalog-filter-title">Тип жилья</legend>
+              <legend class="catalog-filter-title">Тип жилья:</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="control">
@@ -104,12 +104,12 @@
                   </label>
                 </li>
               </ul>
-              <div class="hotel-cost">
-                <p class="hotel-cost-content">
-                  Стоимость,₽;
-                </p>
-              </div>
             </fieldset>
+            <div class="hotel-cost">
+              <p class="hotel-cost-content">
+                Стоимость,₽;
+              </p>
+            </div>
             <div class="button-form">
               <button class="button button-blue button-check" type="submit">Применить</button>
               <button class="button-reset" type="reset">Сбросить</button>
@@ -118,27 +118,29 @@
         </section>
       </div>
       <section class="hotel-catalog">
-        <p class="found-descr">найдено гостиниц: 38</p>
-        <select class="select-control" aria-label="Сортировка">
-          <option value="cheap">Сначала дешёвые</option>
-          <option value="expensive">Сначала дорогие</option>
-          <option value="popular">Сначала популярные</option>
-        </select>
-        <a href="#" class="button button-card">
-          <span class="visually-hidden">
-            показать карточки
-          </span>
-        </a>
-        <a href="#" class="button-columns">
-          <span class="visually-hidden">
-            показать колонки
-          </span>
-        </a>
-        <a href="#" class="button-list">
-          <span class="visually-hidden">
-            показать список
-          </span>
-        </a>
+        <div class="catalog-nav">
+          <p class="found-descr">найдено гостиниц: 38</p>
+          <select class="select-control" aria-label="Сортировка">
+            <option value="cheap">Сначала дешёвые</option>
+            <option value="expensive">Сначала дорогие</option>
+            <option value="popular">Сначала популярные</option>
+          </select>
+          <a href="#" class="button button-card">
+            <span class="visually-hidden">
+              показать карточки
+            </span>
+          </a>
+          <a href="#" class="button-columns">
+            <span class="visually-hidden">
+              показать колонки
+            </span>
+          </a>
+          <a href="#" class="button-list">
+            <span class="visually-hidden">
+              показать список
+            </span>
+          </a>
+        </div>
         <div class="hotels-container">
           <ul class="hotels-list">
               <li class="hotels-card">
