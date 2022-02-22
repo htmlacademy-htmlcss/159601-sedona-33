@@ -335,8 +335,6 @@ body {
 }
 
 .footer-social {
-  display: flex;
-  flex-direction: column;
   width: 240px;
 }
 
@@ -431,10 +429,6 @@ body {
   margin-bottom: 13px;
 }
 
-.pagination {
-  display: flex;
-}
-
 .found-descr {
   margin: 0;
   font-size: 30px;
@@ -445,9 +439,57 @@ body {
 .catalog-nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .select-control {
   width: 287px;
   padding: 12px 19px;
+}
+
+.button-card {
+  width: 48px;
+  height: 48px;
+  color: #fff;
+  background-color: #000
+}
+
+.pagination {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.pagination-card {
+  display: block;
+  text-decoration: none;
+  background-color: #83B3D3;
+  color: #fff;
+  width: 55px;
+  height: 55px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+  box-sizing: border-box;
+}
+
+.card-clear {
+  background-color:#F2F2F2;
+  color: #000
+}
+
+.pagination-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.select-descr {
+  line-height: 23px;
+  margin-left: 51px;
 }

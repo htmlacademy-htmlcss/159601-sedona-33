@@ -125,17 +125,17 @@
             <option value="expensive">Сначала дорогие</option>
             <option value="popular">Сначала популярные</option>
           </select>
-          <a href="#" class="button button-card">
+          <a href="#" class="button-card button-grid">
             <span class="visually-hidden">
               показать карточки
             </span>
           </a>
-          <a href="#" class="button-columns">
+          <a href="#" class="button-card button-columns ">
             <span class="visually-hidden">
               показать колонки
             </span>
           </a>
-          <a href="#" class="button-list">
+          <a href="#" class="button-card button-list">
             <span class="visually-hidden">
               показать список
             </span>
@@ -212,34 +212,36 @@
           <div class="download">
             <a href="" class="button button-blue button-download">Загрузить ещё</a>
           </div>
-          <ul class="pagination">
-            <li class="pagination-item">
-              <a href="#" class="button button-clear pagination-number">1</a>
-            </li>
-            <li class="pagination-item">
-              <a href="#" class="button button-blue pagination-number">2</a>
-            </li>
-            <li class="pagination-item">
-              <a href="#" class="button button-blue pagination-number">3</a>
-            </li>
-            <li class="pagination-item">
-              <a href="#" class="button button-blue pagination-number">4</a>
-            </li>
-            <li class="pagination-item">
-              <a href="#" class="button button-blue pagination-number">...</a>
-            </li>
-            <li class="pagination-item">
-              <a href="#" class="button button-blue pagination-number">10</a>
-            </li>
-          </ul>
-          <form class="catalog-view" action="http://echo.htmlacademy.ru/" method="get">
-            <label for="select-view">Гостиниц на странице</label>
-            <select class="select-view" aria-label="Выбрать вид">
-              <option value="four">4</option>
-              <option value="eight">8</option>
-              <option value="ten">10</option>
-            </select>
-          </form>
+          <div class="pagination-container">
+            <ul class="pagination">
+              <li class="pagination-item">
+                <a href="#" class="pagination-card card-clear">1</a>
+              </li>
+              <li class="pagination-item">
+                <a href="#" class="pagination-card">2</a>
+              </li>
+              <li class="pagination-item">
+                <a href="#" class="pagination-card">3</a>
+              </li>
+              <li class="pagination-item">
+                <a href="#" class="pagination-card">4</a>
+              </li>
+              <li class="pagination-item">
+                <a href="#" class="pagination-card">...</a>
+              </li>
+              <li class="pagination-item">
+                <a href="#" class="pagination-card">10</a>
+              </li>
+            </ul>
+            <form class="catalog-view" action="http://echo.htmlacademy.ru/" method="get">
+              <label for="select-view class="select-descr" ">Гостиниц на странице</label>
+              <select class="select-view" aria-label="Выбрать вид">
+                <option value="four">4</option>
+                <option value="eight">8</option>
+                <option value="ten">10</option>
+              </select>
+            </form>
+          </div>
         </section>
       </div>
     </main>
