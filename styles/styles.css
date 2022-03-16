@@ -53,10 +53,7 @@ body {
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
   width: 345px;
-  list-style: none;
   justify-content: space-between;
   margin-bottom: 10px;
 }
@@ -126,11 +123,8 @@ body {
 
 .hotels-list {
   display: flex;
-  margin: 0;
-  padding: 0;
   margin-top: 76px;
   margin-bottom: 64px;
-  list-style: none;
   flex-wrap: wrap;
   justify-content: space-between;
 }
@@ -143,9 +137,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
-  margin: 0;
-  padding: 0;
-  list-style: none;
   margin-bottom: 91px;
 }
 
@@ -351,8 +342,6 @@ body {
 }
 
 .social-list {
-  margin: 0;
-  padding: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -377,10 +366,6 @@ body {
   margin-right: 72px;
 }
 
-.button-form {
-  display:block;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -401,15 +386,8 @@ body {
   padding-bottom: 76px;
 }
 
-.catalog-filter-list,
-.bredcrumbs {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
 .catalog-form {
-  display:flex;
+  display: flex;
   align-items: flex-start;
   justify-content: space-between;
 }
@@ -427,7 +405,7 @@ body {
 .bredcrumbs-link {
   font-size: 16px;
   padding-right: 26px;
-  color:#fff;
+  color: #fff;
 }
 
 .inner-header-title {
@@ -437,7 +415,7 @@ body {
   margin-bottom: 5px;
 }
 
-.control-input:not(last-child) {
+.control-input:not(:last-child) {
   margin-bottom: 13px;
 }
 
@@ -459,35 +437,26 @@ body {
   padding: 12px 19px;
 }
 
-.select-descr {
-  padding-right: 51px;
-}
-
 .button-card {
   width: 48px;
   height: 48px;
   color: #fff;
-  background-color: #000
+  background-color: #000;
 }
 
 .pagination {
   display: flex;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  padding-top: 30px;
 }
 
 .pagination-item:not(:last-child) {
   margin-right: 8px;
 }
 
-.pagination-card {
+.pagination-link {
   display: block;
   text-decoration: none;
   background-color: #83B3D3;
   color: #fff;
-  width: 55px;
   padding: 20px 20px;
   font-size: 20px;
   font-weight: 700;
@@ -495,8 +464,8 @@ body {
   box-sizing: border-box;
 }
 
-.card-clear {
-  background-color:#F2F2F2;
+.pagination-link-current{
+  background-color: #F2F2F2;
   color: #000
 }
 
@@ -504,9 +473,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 30px;
 }
 
 .select-descr {
   line-height: 23px;
-  margin-left: 51px;
 }

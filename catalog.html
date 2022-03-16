@@ -13,7 +13,7 @@
           <img src="image/icons/logo.svg" width="139" height="70"
           alt="Логотип Sedona" class="logo">
         </a>
-        <ul class="navigation-list">
+        <ul class="navigation-list clear-list">
           <li class="navigation-item">
             <a class="navigation-link" href="index.html">Главная</a>
           </li>
@@ -24,7 +24,7 @@
             <a class="navigation-link-current">Гостиницы</a>
           </li>
         </ul>
-        <ul class="navigation-list navigation-user">
+        <ul class="navigation-list navigation-user clear-list">
           <li class="navigation-item">
             <a class="navigation-link" href="#">
               <span class="visually-hidden">Поиск</span>
@@ -45,10 +45,10 @@
       <div class="filter-img">
         <header class="inner-header">
           <h1 class="inner-header-title">Гостиницы Седоны</h1>
-          <ul class="bredcrumbs">
+          <ul class="bredcrumbs clear-list">
             <li class="bredcrumbs-item">
               <a href="index.html" class="bredcrumbs-link">
-                <span class="visua lly-hidden">Home</span>
+                <span class="visually-hidden">Home</span>
               </a>
             </li>
             <li class="bredcrumbs-item">
@@ -61,7 +61,7 @@
           <form action="http://echo.htmlacademy.ru/" class="catalog-form" method="get">
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Инфраструктура:</legend>
-              <ul class="catalog-filter-list">
+              <ul class="catalog-filter-list clear-list">
                 <li class="catalog-filter-item">
                   <label class="control">
                     <input type="checkbox" class="control-input" name="pool" checked>
@@ -84,7 +84,7 @@
             </fieldset>
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Тип жилья:</legend>
-              <ul class="catalog-filter-list">
+              <ul class="catalog-filter-list clear-list">
                 <li class="catalog-filter-item">
                   <label class="control">
                     <input type="radio" class="control-input" name="home" value="inn">
@@ -125,25 +125,33 @@
             <option value="expensive">Сначала дорогие</option>
             <option value="popular">Сначала популярные</option>
           </select>
-          <a href="#" class="button-card button-grid">
-            <span class="visually-hidden">
-              показать карточки
-            </span>
-          </a>
-          <a href="#" class="button-card button-columns ">
-            <span class="visually-hidden">
-              показать колонки
-            </span>
-          </a>
-          <a href="#" class="button-card button-list">
-            <span class="visually-hidden">
-              показать список
-            </span>
-          </a>
+          <ul class="thumbnail-list clear-list">
+            <li class="thumbnail-ico">
+              <a href="#" class="button-card">
+                <span class="visually-hidden">
+                    показать карточки
+                </span>
+              </a>
+            </li>
+            <li class="thumbnail-ico">
+              <a href="#" class="button-card">
+                <span class="visually-hidden">
+                  показать колонки
+                </span>
+              </a>
+            </li>
+            <li class="thumbnail-ico">
+              <a href="#" class="button-card">
+                <span class="visually-hidden">
+                  показать список
+                </span>
+              </a>
+            </li>
+          </ul>
         </div>
-        <ul class="hotels-list">
+        <ul class="hotels-list clear-list">
           <li class="hotels-card">
-            <a href="hotel.html" class="card-link">
+            <a href="#" class="card-link">
               <img src="image/hotel-amara.jpg" width="300" height="206" alt="гостиница Amara Resort & Spa" class="card-image">
               <h3 class="hotels-card-title">Amara Resort & Spa</h3>
             </a>
@@ -211,32 +219,32 @@
           <a href="" class="button button-blue button-download">Загрузить ещё</a>
         </div>
         <div class="pagination-container">
-          <ul class="pagination">
+          <ul class="pagination clear-list">
             <li class="pagination-item">
-              <a href="#" class="pagination-card card-clear">1</a>
+              <a class="pagination-link pagination-link-current">1</a>
             </li>
             <li class="pagination-item">
-              <a href="#" class="pagination-card">2</a>
+              <a href="#" class="pagination-link">2</a>
             </li>
             <li class="pagination-item">
-              <a href="#" class="pagination-card">3</a>
+              <a href="#" class="pagination-link">3</a>
             </li>
             <li class="pagination-item">
-              <a href="#" class="pagination-card">4</a>
+              <a href="#" class="pagination-link">4</a>
             </li>
             <li class="pagination-item">
-              <a href="#" class="pagination-card">...</a>
+              <a href="#" class="pagination-link">...</a>
             </li>
             <li class="pagination-item">
-              <a href="#" class="pagination-card">10</a>
+              <a href="#" class="pagination-link">10</a>
             </li>
           </ul>
-          <form class="catalog-view" action="http://echo.htmlacademy.ru/" method="get">
-            <label for="select-view" class="select-descr" ">Гостиниц на странице</label>
+          <span>Гостиниц на странице</span>
+          <form action="get" class="numb">
             <select class="select-view" aria-label="Выбрать вид">
-              <option value="four">4</option>
-              <option value="eight">8</option>
-              <option value="ten">10</option>
+              <option value="4">4</option>
+              <option value="8">8</option>
+              <option value="10">10</option>
             </select>
           </form>
         </div>
@@ -255,7 +263,7 @@
     </section>
     <footer class="page-footer">
       <section class="footer-social">
-        <ul class="social-list">
+        <ul class="social-list clear-list">
           <li class="social-item">
             <a href="https://twitter.com/htmlacademy_ru" class="social-link">
               <span class="visually-hidden">Twitter</span>
