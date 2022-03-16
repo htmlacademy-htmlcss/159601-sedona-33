@@ -101,7 +101,7 @@ body {
   text-align: center;
   margin-bottom: 63px;
   padding-top: 51px;
-  padding-bottom: 83px;
+  padding-bottom: 78px;
 }
 
 .main-wrapper {
@@ -252,7 +252,7 @@ body {
   background-size: 100%;
   text-align: center;
   color: #fff;
-  padding: 94px 200px;
+  padding: 94px;
   margin-bottom: 40px;
 }
 .subscribe-description {
@@ -378,7 +378,7 @@ body {
 }
 
 .button-form {
-  display:flex;
+  display:block;
 }
 
 .visually-hidden {
@@ -397,9 +397,8 @@ body {
   background-size: 100%;
   background-repeat: no-repeat;
   color: #fff;
-  padding-left: 71px;
-  padding-top: 35px;
-  padding-bottom: 81px;
+  padding: 35px 72px;
+  padding-bottom: 76px;
 }
 
 .catalog-filter-list,
@@ -460,6 +459,10 @@ body {
   padding: 12px 19px;
 }
 
+.select-descr {
+  padding-right: 51px;
+}
+
 .button-card {
   width: 48px;
   height: 48px;
@@ -472,6 +475,7 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  padding-top: 30px;
 }
 
 .pagination-item:not(:last-child) {
@@ -484,7 +488,7 @@ body {
   background-color: #83B3D3;
   color: #fff;
   width: 55px;
-  height: 55px;
+  padding: 20px 20px;
   font-size: 20px;
   font-weight: 700;
   line-height: 26px;
