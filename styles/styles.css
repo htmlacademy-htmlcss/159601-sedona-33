@@ -63,9 +63,7 @@ body {
   margin-left: auto;
 }
 
-.navigation-link,
-.navigation-link-current
- {
+.navigation-link {
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
@@ -82,7 +80,6 @@ body {
 }
 
 .page-header-logo {
-  width: 140px;
   margin-right: 40px;
 }
 
@@ -186,14 +183,12 @@ body {
 }
 
 .advantages-wrapper-blue-light {
-  background-color: rgba(131, 179, 211, 0.12);
+  background-color: rgba(131, 179, 211, 0.2);
   color: #333;
-  width: 400px;
 }
 
 .advantages-wrapper-blue-cold {
   background-color: rgba(131, 179, 211, 0.12);
-  width: 400px;
 }
 
 .advantages-descriptions {
