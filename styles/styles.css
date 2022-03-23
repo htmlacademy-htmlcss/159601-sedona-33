@@ -16,7 +16,6 @@
 
 html {
   height: 100%;
-  /* box-sizing: border-box; */
 }
 
 body {
@@ -126,19 +125,21 @@ body {
 }
 
 .hotels-list {
-  display: flex;
+  display: grid;
+  gap: 18px;
+  grid-template-columns: 340px 340px 340px;
   margin-top: 76px;
   margin-bottom: 64px;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  justify-items: center;
 }
 
 .hotels-card {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
-  width: 300px;
+  align-items: flex-start;
+  justify-content: space-between;
   min-height: 438px;
+  padding: 20px;
 }
 
 .hotels-card-title {
@@ -155,16 +156,26 @@ body {
   margin: 0;
 }
 
-hotel-rate {
-  border: 1px solid;
-  width: 160px;
-  background-color: #F2F2F2;
-  border-radius: 4px;
+.hotels-price {
+  margin: 0;
+  width: 140px;
 }
 
-.hotels-price-block {
-  display: flex;
-  align-items: center;
+.hotel-card-stars {
+  height: 17px;
+  width: 90px;
+  margin-top: 16px;
+  /* margin-bottom: 0; */
+  background-image: url("../image/icons/star.svg");
+  background-repeat: repeat-x;
+  background-position: left center;
+}
+
+.hotel-card-stars-2{
+  width: 45px;
+}
+.hotel-card-stars-3{
+  width: 65px;
 }
 
 .advantages-list {
@@ -260,7 +271,7 @@ hotel-rate {
 
 .search-button {
   display: inline-block;
-  background-color: button#756257;
+  background-color:#756257;
   color: #fff;
   line-height: 36px;
   width: 555px;
@@ -305,8 +316,15 @@ hotel-rate {
   width: 200px;
 }
 
-.hotel-rate {
+.subscribe-form {
+  display: flex;
+  margin: 0;
   padding: 0;
+  justify-content: center;
+
+}
+
+.hotel-rate {
   background-color: #F2F2F2;
   color: #333;
   font-size: 16px;
@@ -449,6 +467,10 @@ hotel-rate {
   padding-bottom: 76px;
 }
 
+.button-form {
+  margin-left: auto;
+}
+
 .catalog-form {
   display: flex;
   align-items: flex-start;
@@ -522,11 +544,9 @@ hotel-rate {
 }
 
 .pagination {
-  display: flex;
-}
-
-.pagination-item:not(:last-child) {
-  margin-right: 8px;
+  display: grid;
+  grid-template-columns: repeat(6,55px);
+  gap: 10px;
 }
 
 .pagination-link {
@@ -534,11 +554,12 @@ hotel-rate {
   text-decoration: none;
   background-color: #83B3D3;
   color: #fff;
-  padding: 20px 20px;
+  padding: 15px 15px;
   font-size: 20px;
   font-weight: 700;
   line-height: 26px;
   box-sizing: border-box;
+  text-align: center;
 }
 
 .pagination-link-current{
@@ -550,7 +571,6 @@ hotel-rate {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 30px;
 }
 
 .select-descr {
