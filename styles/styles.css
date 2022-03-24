@@ -343,6 +343,10 @@ body {
   text-decoration: none;
 }
 
+.card-image {
+  object-fit: cover;
+}
+
 .button {
   font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
@@ -576,3 +580,4 @@ body {
 .select-descr {
   line-height: 23px;
 }
+
