@@ -16,7 +16,6 @@
 
 html {
   height: 100%;
-  /* box-sizing: border-box; */
 }
 
 body {
@@ -37,17 +36,23 @@ body {
   list-style: none;
 }
 
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0 0 15px 0 rgba(0,0,0,.2);
+  background-color: #fff;
+}
+
 .navigation {
   display: flex;
   align-items: center;
   padding: 0 70px;
 }
 
-.wrapper {
-  width: 1200px;
-  margin: 0 auto;
-  box-shadow: 0 0 15px 0 rgba(0,0,0,.2);
-  background-color: #fff;
+.navigation-button {
+  width: 130px;
+  display: block;
+  padding: 9px 15px;
 }
 
 .navigation-list {
@@ -120,15 +125,57 @@ body {
 }
 
 .hotels-list {
-  display: flex;
+  display: grid;
+  gap: 18px;
+  grid-template-columns: 340px 340px 340px;
   margin-top: 76px;
   margin-bottom: 64px;
+  justify-items: center;
+}
+
+.hotels-card {
+  display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
   justify-content: space-between;
+  min-height: 438px;
+  padding: 20px;
+}
+
+.hotels-card-title {
+  margin: 0;
+  margin-top: 16px;
 }
 
 .hotel-catalog {
   padding: 70px;
+}
+
+.hotels-type {
+  width: 160px;
+  margin: 0;
+}
+
+.hotels-price {
+  margin: 0;
+  width: 140px;
+}
+
+.hotel-card-stars {
+  height: 17px;
+  width: 90px;
+  margin-top: 16px;
+  /* margin-bottom: 0; */
+  background-image: url("../image/icons/star.svg");
+  background-repeat: repeat-x;
+  background-position: left center;
+}
+
+.hotel-card-stars-2 {
+  width: 45px;
+}
+.hotel-card-stars-3 {
+  width: 65px;
 }
 
 .advantages-list {
@@ -223,10 +270,12 @@ body {
 }
 
 .search-button {
-  background-color: #756257;
+  display: inline-block;
+  background-color:#756257;
   color: #fff;
   line-height: 36px;
-  margin-bottom: 93px;
+  width: 555px;
+  padding: 15px 0;
 }
 
 .subscribe {
@@ -258,16 +307,29 @@ body {
   margin-bottom: 29px;
 }
 
+.subscribe-field {
+  background-color: #F2F2F2;
+  color: #000;
+}
+
+.subscribe-button {
+  width: 200px;
+}
+
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+}
+
 .hotel-rate {
   background-color: #F2F2F2;
   color: #333;
   font-size: 16px;
   text-transform: uppercase;
-}
-
-.subscribe-field {
-  background-color: #F2F2F2;
-  color: #000;
+  width: 160px;
+  padding: 10px;
+  border-radius: 4px;
+  text-align: center;
 }
 
 .card-link {
@@ -278,14 +340,20 @@ body {
   text-decoration: none;
 }
 
+.card-image {
+  object-fit: cover;
+}
+
 .button {
   font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
   text-decoration: none;
+  text-align: center;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
   color: #fff;
+  border-radius: 4px;
 }
 
 .button-brown {
@@ -305,11 +373,31 @@ body {
 .button-check {
   font-size: 16px;
   line-height: 21px;
+  padding: 10px;
+  border-radius: 4px
+}
+
+.hotel-button {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-more {
+  width: 113px;
+}
+
+.button-favorite {
+  width: 120px;
 }
 
 .button-clear {
   background-color: #F2F2F2;
   color: #333;
+}
+
+.button-check {
+  width: 160px;
+  display: block;
 }
 
 .button-download {
@@ -380,15 +468,33 @@ body {
   padding-bottom: 76px;
 }
 
+.button-form {
+  margin-left: auto;
+}
+
 .catalog-form {
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
 }
 
 .catalog-filter-title {
   border: 0;
   margin-bottom: 30px;
+}
+
+.catalog-filter-container {
+  width: 1090px;
+  margin: 0 auto;
+}
+
+.catalog-filter-group {
+  margin-right: 34px;
+  border: none;
+  padding: 0;
+}
+
+.catalog-filter-item {
+  margin-bottom: 16px;
 }
 
 .bredcrumbs {
@@ -439,11 +545,9 @@ body {
 }
 
 .pagination {
-  display: flex;
-}
-
-.pagination-item:not(:last-child) {
-  margin-right: 8px;
+  display: grid;
+  grid-template-columns: repeat(6,55px);
+  gap: 10px;
 }
 
 .pagination-link {
@@ -451,11 +555,12 @@ body {
   text-decoration: none;
   background-color: #83B3D3;
   color: #fff;
-  padding: 20px 20px;
+  padding: 15px 15px;
   font-size: 20px;
   font-weight: 700;
   line-height: 26px;
   box-sizing: border-box;
+  text-align: center;
 }
 
 .pagination-link-current{
@@ -467,9 +572,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 30px;
 }
 
 .select-descr {
   line-height: 23px;
 }
+
